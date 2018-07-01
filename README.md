@@ -9,4 +9,4 @@ npm install
 npm start 
 ```
 
-Your app will be running at localhost:8080
+The app will be running at localhost:8080
