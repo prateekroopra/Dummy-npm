@@ -1,0 +1,321 @@
+html, body
+{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  top: 0;
+
+}
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+* {
+  font-family: Arial, Helvetica, serif;
+  line-height: 1.2;
+  color: 606060;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+}
+
+.row [class^="col"] {
+  float: left;
+  margin: 0.5rem 2%;
+  min-height: 0.125rem;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  width: 96%;
+}
+
+.col-1-s {
+  width: 4.33%;
+}
+
+.col-2-s {
+  width: 12.66%;
+}
+
+.col-3-s {
+  width: 21%;
+}
+
+.col-4-s {
+  width: 29.33%;
+}
+
+.col-5-s {
+  width: 37.66%;
+}
+
+.col-6-s {
+  width: 46%;
+}
+
+.col-7-s {
+  width: 54.33%;
+}
+
+.col-8-s {
+  width: 62.66%;
+}
+
+.col-9-s {
+  width: 71%;
+}
+
+.col-10-s {
+  width: 79.33%;
+}
+
+.col-11-s {
+  width: 87.66%;
+}
+
+.col-12-s {
+  width: 96%;
+}
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.fr
+{
+  float: right !important;
+}
+
+.top-bar {
+  margin-top: 0.5rem;
+}
+
+strong {
+  font-size: 1.1rem;
+  color: #2e2e2d;
+}
+
+.gfont {
+  color: #33a00f;
+}
+
+.grfont {
+  color: #eaeaea;
+}
+
+.dgrfont {
+  color: #999999;
+}
+
+.sm {
+font-size: 0.8rem;
+}
+
+.heading{
+  color: #333333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+hr {
+border:none; border-top:2px #a9a9a9 solid; margin-bottom:0px;
+}
+
+.gr-bg {
+  background-color: #f0f0f0;
+}
+
+.g-bg {
+  background-color: #33a00f;
+  color:#ffffff;
+}
+
+.ptb{
+padding-top: 1.5rem;
+padding-bottom: 1.5rem;
+}
+
+.sp {
+  display:-webkit-inline-box;
+  font-size:0.8em;
+}
+
+.mr {
+  margin-right: 1rem;
+}
+
+.ib {
+  display: inline-block;
+}
+
+#accordion {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.4s;
+    padding: 0.9rem;
+    text-align: left;
+    font-size: 0.9em;
+    border: #c3c3c3 1px solid;
+}
+
+.box {
+    padding: 0 14px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    font-size: 0.9em;
+    border: #c3c3c3 1px solid;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+
+}
+
+.mtac {
+  margin-top: 3rem;
+}
+
+.form-type
+{
+  margin-top: 0.3rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  width: 100%;
+  border-radius: 0.2rem;
+  border: 2px solid #d2d1d1;
+  padding-left: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.form-radio {
+  position: absolute;
+ opacity: 0;
+ cursor: pointer;
+}
+
+input[type="checkbox"] {
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+}
+
+.sp-text {
+  vertical-align: -webkit-baseline-middle;
+  margin-left: 2.5em;
+    font-size: 0.9em;
+}
+
+label input[type="radio"] ~ i.fa.fa-circle-o{
+    color: #d2d1d1;    display: inline;
+}
+label input[type="radio"] ~ i.fa.fa-dot-circle-o{
+    display: none;
+}
+label input[type="radio"]:checked ~ i.fa.fa-circle-o{
+    display: none;
+}
+label input[type="radio"]:checked ~ i.fa.fa-dot-circle-o{
+    color: #33a00f;    display: inline;
+}
+label:hover input[type="radio"] ~ i.fa {
+color: #33a00f;
+cursor: pointer;
+}
+
+.sup {
+  vertical-align: super;
+}
+
+
+label input[type="checkbox"] ~ i.fa.fa-square-o{
+    color: #c8c8c8;    display: inline;
+}
+label input[type="checkbox"] ~ i.fa.fa-check-square-o{
+    display: none;
+}
+label input[type="checkbox"]:checked ~ i.fa.fa-square-o{
+    display: none;
+}
+label input[type="checkbox"]:checked ~ i.fa.fa-check-square-o{
+    color: #33a00f;    display: inline;
+}
+label:hover input[type="checkbox"] ~ i.fa {
+color:  #33a00f;
+cursor: pointer;
+}
+
+.btn {
+  border: none;
+  border-radius: 0.3em;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+  cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+th {
+  background-color: #33a00f;
+  color: #ffffff;
+  font-size: 0.8em;
+}
+
+tr {
+  cursor: pointer;
+}
+
+td {font-size: 0.8em;}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+.hv:hover {background-color: #c5dfbc;}
+
+.ov {overflow-x:auto;}
+
+@media screen and (max-width: 1100px) {
+  .fa-5x {
+    font-size: 3em !important;
+
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .fa-5x {
+    font-size: 1em !important;
+
+  }
+}
